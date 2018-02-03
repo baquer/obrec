@@ -12,9 +12,15 @@
 		804082B62025984300842EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804082B42025984300842EE9 /* Main.storyboard */; };
 		804082B82025984400842EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804082B72025984400842EE9 /* Assets.xcassets */; };
 		804082BB2025984400842EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804082B92025984400842EE9 /* LaunchScreen.storyboard */; };
+		804082C72025BF3A00842EE9 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 804082C62025BF3A00842EE9 /* Inceptionv3.mlmodel */; };
+		8063EF272026013F004731A9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8063EF262026013F004731A9 /* HealthKit.framework */; };
+		8063EF2A20262D96004731A9 /* VIewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8063EF2920262D96004731A9 /* VIewController2.swift */; };
+		938840AA064361FF87D229CA /* Pods_obrec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095953BC09AE0927B0237401 /* Pods_obrec.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		095953BC09AE0927B0237401 /* Pods_obrec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_obrec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E62791686042695740E1CD8 /* Pods-obrec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-obrec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-obrec/Pods-obrec.debug.xcconfig"; sourceTree = "<group>"; };
 		804082AD2025984300842EE9 /* obrec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = obrec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		804082B02025984300842EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		804082B22025984300842EE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,11 @@
 		804082B72025984400842EE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		804082BA2025984400842EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		804082BC2025984400842EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		804082C62025BF3A00842EE9 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		8063EF242025FF71004731A9 /* obrec.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = obrec.entitlements; sourceTree = "<group>"; };
+		8063EF262026013F004731A9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		8063EF2920262D96004731A9 /* VIewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIewController2.swift; sourceTree = "<group>"; };
+		A35829F2AA796F583234691C /* Pods-obrec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-obrec.release.xcconfig"; path = "Pods/Target Support Files/Pods-obrec/Pods-obrec.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8063EF272026013F004731A9 /* HealthKit.framework in Frameworks */,
+				938840AA064361FF87D229CA /* Pods_obrec.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AECB6EA081CAFB60AF8D3E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E62791686042695740E1CD8 /* Pods-obrec.debug.xcconfig */,
+				A35829F2AA796F583234691C /* Pods-obrec.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		804082A42025984300842EE9 = {
 			isa = PBXGroup;
 			children = (
 				804082AF2025984300842EE9 /* obrec */,
 				804082AE2025984300842EE9 /* Products */,
+				8063EF252026013F004731A9 /* Frameworks */,
+				5AECB6EA081CAFB60AF8D3E9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,50 @@
 		804082AF2025984300842EE9 /* obrec */ = {
 			isa = PBXGroup;
 			children = (
-				804082B02025984300842EE9 /* AppDelegate.swift */,
-				804082B22025984300842EE9 /* ViewController.swift */,
-				804082B42025984300842EE9 /* Main.storyboard */,
-				804082B72025984400842EE9 /* Assets.xcassets */,
-				804082B92025984400842EE9 /* LaunchScreen.storyboard */,
+				8063EF242025FF71004731A9 /* obrec.entitlements */,
+				8063EF2820262D1A004731A9 /* Model */,
+				804082C62025BF3A00842EE9 /* Inceptionv3.mlmodel */,
+				804082C32025B7EB00842EE9 /* Controller */,
+				804082C22025B7BB00842EE9 /* View */,
 				804082BC2025984400842EE9 /* Info.plist */,
 			);
 			path = obrec;
+			sourceTree = "<group>";
+		};
+		804082C22025B7BB00842EE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				804082B72025984400842EE9 /* Assets.xcassets */,
+				804082B92025984400842EE9 /* LaunchScreen.storyboard */,
+				804082B42025984300842EE9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		804082C32025B7EB00842EE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				804082B22025984300842EE9 /* ViewController.swift */,
+				804082B02025984300842EE9 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8063EF252026013F004731A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8063EF262026013F004731A9 /* HealthKit.framework */,
+				095953BC09AE0927B0237401 /* Pods_obrec.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8063EF2820262D1A004731A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8063EF2920262D96004731A9 /* VIewController2.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 804082BF2025984400842EE9 /* Build configuration list for PBXNativeTarget "obrec" */;
 			buildPhases = (
+				A467DB53B47536CD1047148C /* [CP] Check Pods Manifest.lock */,
 				804082A92025984300842EE9 /* Sources */,
 				804082AA2025984300842EE9 /* Frameworks */,
 				804082AB2025984300842EE9 /* Resources */,
+				6F25D802931C27C90114D01A /* [CP] Embed Pods Frameworks */,
+				33A339B1BCEDD2C0F8A01538 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +160,14 @@
 					804082AC2025984300842EE9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,12 +202,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33A339B1BCEDD2C0F8A01538 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-obrec/Pods-obrec-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F25D802931C27C90114D01A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-obrec/Pods-obrec-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ProjectOxfordFace/ProjectOxfordFace.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProjectOxfordFace.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-obrec/Pods-obrec-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A467DB53B47536CD1047148C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-obrec-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		804082A92025984300842EE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				804082B32025984300842EE9 /* ViewController.swift in Sources */,
+				8063EF2A20262D96004731A9 /* VIewController2.swift in Sources */,
+				804082C72025BF3A00842EE9 /* Inceptionv3.mlmodel in Sources */,
 				804082B12025984300842EE9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,9 +399,12 @@
 		};
 		804082C02025984400842EE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E62791686042695740E1CD8 /* Pods-obrec.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = obrec/obrec.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H873UMU56B;
 				INFOPLIST_FILE = obrec/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baquer.obrec;
@@ -286,9 +416,12 @@
 		};
 		804082C12025984400842EE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A35829F2AA796F583234691C /* Pods-obrec.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = obrec/obrec.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H873UMU56B;
 				INFOPLIST_FILE = obrec/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baquer.obrec;
